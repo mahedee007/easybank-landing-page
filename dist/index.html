@@ -8,12 +8,41 @@
  
   
   <title>Easybank landing page</title>
+  <!-- Tailwind Output -->
   <link rel="stylesheet" href="output.css">
-
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+<!-- Icons  -->
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
  
 </head>
-<body>
-<h1 class="text-center bg-blue-700 font-extrabold">Hello Fucking world</h1>
+<body >
+  <!-- header starts here -->
+  <header class="">
+    <nav class="flex items-center justify-between w-[92%] mx-auto p-5 ">
+      <div>
+        <img src="../images/logo.svg" alt="logo">
+      </div>
+      <div id="nav-list" class="transition-all duration-700 absolute md:static bg-white md:min-h-fit min-h-[60vh] left-[10%] top-[30%]  md:w-auto w-4/5 rounded-md opacity-0 md:opacity-100  " >
+        <ul class=" flex md:flex-row flex-col items-center md:gap-[4vw] gap-6 text-Grayish-Blue md:font-semibold font-bold md:py-0 py-5">
+          <li><a class="hover:text-black hover:underline decoration-Lime-Green decoration-4 underline-offset-8 ease-in duration-1000" href="#home">Home</a></li>
+          <li><a class="hover:text-black hover:underline decoration-Lime-Green decoration-4 underline-offset-8 ease-in duration-1000" href="#about">About</a></li>
+          <li><a class="hover:text-black hover:underline decoration-Lime-Green decoration-4 underline-offset-8 ease-in duration-1000" href="#contact">Contact</a></li>
+          <li><a class="hover:text-black hover:underline decoration-Lime-Green decoration-4 underline-offset-8 ease-in duration-1000" href="#blog">Blog</a></li>
+          <li><a class="hover:text-black hover:underline decoration-Lime-Green decoration-4 underline-offset-8 ease-in duration-1000" href="#career">Careers</a></li>
+        </ul>
+      </div>
+      <div class="flex items-center">
+        <button class="hidden  lg:block bg-gradient-to-r from-Lime-Green to-Bright-Cyan px-7 py-1.5 rounded-full text-white font-bold">Request Invite</button>
+        <ion-icon onclick='toggleBtn(this)' class="text-5xl md:hidden cursor-pointer" name="reorder-three-sharp"></ion-icon>
+      </div>
+    </nav>
+
+  </header>
+
   Home
   About
   Contact
@@ -90,7 +119,17 @@
   Request Invite
 
   © Easybank. All Rights Reserved
+  <script>
+  let navLists = document.getElementById('nav-list')
+  function toggleBtn(e){
   
+  e.name = e.name === 'reorder-three-sharp' ? 'close-sharp' : 'reorder-three-sharp'
+  
+  navLists.classList.toggle('opacity-100');
+  
+  
+}
+  </script>
   
 </body>
 </html>
