@@ -9,7 +9,7 @@ module.exports = {
         '100%': '100%',
       },
       backgroundPosition:{
-        'r-t': '600px 40%',
+        'r-t': '500px 55%',
       },
       
       colors:{

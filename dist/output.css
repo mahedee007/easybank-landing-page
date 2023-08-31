@@ -554,8 +554,8 @@ video {
   right: -130px;
 }
 
-.top-\[-25\%\] {
-  top: -25%;
+.top-\[-19\%\] {
+  top: -19%;
 }
 
 .top-\[30\%\] {
@@ -587,8 +587,8 @@ video {
   display: none;
 }
 
-.h-\[80vh\] {
-  height: 80vh;
+.h-\[100vh\] {
+  height: 100vh;
 }
 
 .min-h-\[60vh\] {
@@ -672,7 +672,7 @@ video {
 }
 
 .bg-r-t {
-  background-position: 600px 40%;
+  background-position: 500px 55%;
 }
 
 .bg-no-repeat {
